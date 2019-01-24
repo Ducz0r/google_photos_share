@@ -1,9 +1,9 @@
 <!doctype html>
-
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Google Photos Share">
     <meta name="author" content="Luka Murn">
@@ -15,9 +15,42 @@
 </head>
 
 <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Google Photos Share</h1>
+            <p class="lead">
+                Write your shared Google Photos URL in the form below.
+            </p>
+            <p>
+                <form data-role="submit-url">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="form-url">Google Photos Share URL</label>
+                            <input type="text" class="form-control" id="form-url" placeholder="https://photos.app.goo.gl/xxxxxxxxxxxxxxxxx">
+                        </div>
+                        <button type="submit" class="btn btn-success" disabled>Submit</button>
+                    </fieldset>
+                </form>
+            </p>
+        </div>
+
+        <div class="alert alert-danger" role="alert" data-role="error-alert" style="display: none;"></div>
+
+        <div data-role="output-container" style="display: none;">
+            <div class="alert alert-success" role="alert" data-role="success-alert"></div>
+            <div>
+                <a class="btn btn-primary" href="#" role="button" data-role="output-hyperlinks">Hyperlinks</a>
+                <a class="btn btn-primary" href="#" role="button" data-role="output-fs-hyperlinks">Hyperlinks (full-size)</a>
+                <a class="btn btn-primary" href="#" role="button" data-role="output-wp-html">Wordpress HTML</a>
+            </div>
+            <div class="output-contents" data-role="output-contents"></div>
+        </div>
+    </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/lodash.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
