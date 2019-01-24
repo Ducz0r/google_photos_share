@@ -28,3 +28,7 @@ Oh boy, there are many of these.
   ```
 
 * And probably the biggest assumption of all, it's assumed that the Google Photos web application remains as it is, and keeps the same JavaScript for handling images, so the scraper doesn't start failing uncontrollably.
+
+### Next steps
+
+Silly me! Re-write this into a Wordpress plugin, of course! _What was I thinking..._
