@@ -104,7 +104,7 @@
                 output = output + [
                     el.url,
                     '<br><br>'
-                ].join();
+                ].join('');
             });
             outputContents.html(output);
         });
@@ -117,7 +117,7 @@
                     '=w' + el.w,
                     '-h' + el.h,
                     '-no<br><br>'
-                ].join();
+                ].join('');
             });
             outputContents.html(output);
         });
@@ -132,9 +132,9 @@
                     '-h' + el.h,
                     '-no" data-size="' + el.w + 'x' + el.h,
                     '" class="fancyboxforwp" data-fancybox="gallery"&gt;',
-                    '&lt;img src="' + el.url + '" alt="' + el.url + '"',
+                    '&lt;img src="' + el.url + '" alt="' + el.url + '" ',
                     'class="alignnone peg-photo"&gt;&lt;/a&gt;<br><br>'
-                ].join();
+                ].join('');
             });
             outputContents.html(output);
         });
